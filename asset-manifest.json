@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/foryum/static/css/main.356f61fa.chunk.css",
-    "main.js": "/foryum/static/js/main.51abba2b.chunk.js",
-    "main.js.map": "/foryum/static/js/main.51abba2b.chunk.js.map",
-    "runtime-main.js": "/foryum/static/js/runtime-main.4598219c.js",
-    "runtime-main.js.map": "/foryum/static/js/runtime-main.4598219c.js.map",
-    "static/css/2.383c0125.chunk.css": "/foryum/static/css/2.383c0125.chunk.css",
-    "static/js/2.fbbb0aea.chunk.js": "/foryum/static/js/2.fbbb0aea.chunk.js",
-    "static/js/2.fbbb0aea.chunk.js.map": "/foryum/static/js/2.fbbb0aea.chunk.js.map",
-    "index.html": "/foryum/index.html",
-    "static/css/2.383c0125.chunk.css.map": "/foryum/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.356f61fa.chunk.css.map": "/foryum/static/css/main.356f61fa.chunk.css.map",
-    "static/js/2.fbbb0aea.chunk.js.LICENSE.txt": "/foryum/static/js/2.fbbb0aea.chunk.js.LICENSE.txt"
+    "main.css": "/Foryum/static/css/main.356f61fa.chunk.css",
+    "main.js": "/Foryum/static/js/main.51abba2b.chunk.js",
+    "main.js.map": "/Foryum/static/js/main.51abba2b.chunk.js.map",
+    "runtime-main.js": "/Foryum/static/js/runtime-main.bfd457d0.js",
+    "runtime-main.js.map": "/Foryum/static/js/runtime-main.bfd457d0.js.map",
+    "static/css/2.383c0125.chunk.css": "/Foryum/static/css/2.383c0125.chunk.css",
+    "static/js/2.fbbb0aea.chunk.js": "/Foryum/static/js/2.fbbb0aea.chunk.js",
+    "static/js/2.fbbb0aea.chunk.js.map": "/Foryum/static/js/2.fbbb0aea.chunk.js.map",
+    "index.html": "/Foryum/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/Foryum/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.356f61fa.chunk.css.map": "/Foryum/static/css/main.356f61fa.chunk.css.map",
+    "static/js/2.fbbb0aea.chunk.js.LICENSE.txt": "/Foryum/static/js/2.fbbb0aea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4598219c.js",
+    "static/js/runtime-main.bfd457d0.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.fbbb0aea.chunk.js",
     "static/css/main.356f61fa.chunk.css",
