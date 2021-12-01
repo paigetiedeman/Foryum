@@ -1,3 +1,10 @@
+# Foryum Recipe Discussion
+
+### By: Becket Harvey, Paige Tiedeman and Erica Marroquin
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

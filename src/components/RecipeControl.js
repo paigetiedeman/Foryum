@@ -84,26 +84,6 @@ class RecipeControl extends React.Component {
     });
   }
 
-  // handleDownVote = (postId) => {
-  //   const { dispatch } = this.props;
-  //   const { author, message, date, upVotes, downVotes, profImg, id } = this.props.mainPostList[postId];
-  //   const action ={
-  //     type: 'ADD_POST',
-  //     author: author,
-  //     message: message,
-  //     date: date,
-  //     upVotes: upVotes,
-  //     downVotes: downVotes + 1,
-  //     profImg: profImg,
-  //     id: id
-  //   }
-  //   dispatch(action);
-  // }
-
-  // case "UPVOTE":
-  //   let newState1 = { ...state };
-  //   newState1[id].voteCount++;
-  //   return newState1;
 
   handleUpvote = (id) => {
     const { dispatch } = this.props;
@@ -152,11 +132,18 @@ RecipeControl.propTypes = {
   formVisibleOnPage: PropTypes.bool
 };
 
-const mapStateToProps = state => {
+const sortHappy = (recipeList) => {
+  const sortArray = Object.entries(recipeList);
+  const arraySorted = sortArray.sort((a,b) => (b[1].upvoteCount - b[1].downvoteCount) - (a[1].upvoteCount - a[1].downvoteCount));
+  return Object.fromEntries(arraySorted)
+}
+
+const mapStateToProps = (state) => {
+  const sortedList = sortHappy(state.mainRecipeList);
   return {
-    mainRecipeList: state.mainRecipeList,
+    mainRecipeList: sortedList,
     formVisibleOnPage: state.formVisibleOnPage
-  }
+  };
 };
 
 RecipeControl = connect(mapStateToProps)(RecipeControl);

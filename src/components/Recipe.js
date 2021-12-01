@@ -8,12 +8,13 @@ function Recipe(props){
       <div>
         <h2>{props.title}</h2>
         <p><em>Time to Cook: {props.time} minutes</em></p>
-        <p><button onClick={() => props.onUpVoteClick(props.id) } className="up">Up</button></p>
-        <p> Yumms: {props.upvoteCount} </p>
-        <p><button onClick={() => props.onDownVoteClick(props.id) } className="down">Down</button></p>
-        <p>Yucks : {props.downvoteCount} </p>
+        
+        <div onClick={() => props.onUpVoteClick(props.id) } className="arrowbtn arrowbtn-up"><p> ^</p></div><p className="yumm">Yumms: {props.upvoteCount}</p>
+        
+        <div><p onClick={() => props.onDownVoteClick(props.id) }className="arrowbtn arrowbtn-down">^</p></div><p className="yumm yuck">Yucks : {props.downvoteCount} </p>
+
         <p><em>{props.formattedWaitTime}</em></p>
-        <button onClick = {() => props.whenRecipeClicked(props.id)}>Details</button>
+        <button onClick = {() => props.whenRecipeClicked(props.id)} className="btn btn-dark">Details</button>
         <hr/>
       </div>
     </>

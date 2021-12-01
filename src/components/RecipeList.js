@@ -26,7 +26,7 @@ function RecipeList(props) {
 }
 
 RecipeList.propTypes = {
-  recipeList: PropTypes.object,
+  recipeList: PropTypes.array,
   onRecipeSelection: PropTypes.func,
   onUpvote: PropTypes.func,
   onDownvote: PropTypes.func
