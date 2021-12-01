@@ -1,11 +1,35 @@
 import React from 'react';
+import PropTypes from "prop-types";
+import Recipe from "./Recipe";
 
-function TicketList(props) {
-  return(
-    <React.Fragment>
+function RecipeList(props) {
 
-    </React.Fragment>
-  )
+  return (
+    <>
+    <hr/>
+    {Object.values(props.recipeList).map((recipe) => {
+    return <Recipe
+      whenRecipeClicked = {props.onRecipeSelection}      
+      title= {recipe.title}
+      time={recipe.time}
+      description= {recipe.description}
+      formattedWaitTime={recipe.formattedWaitTime}
+      upvoteCount={recipe.upvoteCount}
+      downvoteCount={recipe.downvoteCount}
+      onUpVoteClick = {props.onUpvote}
+      onDownVoteClick = {props.onDownvote}
+      id= {recipe.id}
+      key={recipe.id} />
+    })}
+    </>
+    );
 }
 
-export default TicketList;
+RecipeList.propTypes = {
+  recipeList: PropTypes.object,
+  onRecipeSelection: PropTypes.func,
+  onUpvote: PropTypes.func,
+  onDownvote: PropTypes.func
+};
+
+export default RecipeList;

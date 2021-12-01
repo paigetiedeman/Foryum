@@ -4,7 +4,7 @@ import RecipeControl from './RecipeControl';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <Header />
       <RecipeControl />
     </div>
