@@ -1,6 +1,5 @@
 import * as c from './../actions/ActionTypes';
 
-
 export default (state = {}, action) => {
   const { title, time, description, id, upvoteCount, downvoteCount, timeOpen, formattedWaitTime } = action;
   switch (action.type) {
